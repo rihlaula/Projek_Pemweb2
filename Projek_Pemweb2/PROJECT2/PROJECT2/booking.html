@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bengkel Putra Prima</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand col-3" href="#">Admin - Bengkel Putra Prima </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="awal.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="produklayanan.html">Produk & Fasilitas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="booking.html">Booking</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Berita <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tentang Kami <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0 mr-4" type="submit">Search</button>
+        <a href="login.html" class="mr-4">Login</a>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Form -->
+
+<div class="container" style="padding-top: 30px; padding-bottom: 30px;">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="card-header bg-primary">
+        <h3 class="card-title">Booking Service</h3>
+    </div>
+    <div class="card-body bg-light">
+        <form>
+            <div class="form-group row">
+                <label for="Jenis" class="col-4 col-form-label">Jenis Kendaraan</label> 
+                <div class="col-8">
+                <select id="Jenis" name="Jenis" class="custom-select">
+                    <option value="-">-- Pilih Kendaraan --</option>
+                    <option value="MS">Minibus</option>
+                    <option value="V">Van</option>
+                    <option value="CV">Camper Van</option>
+                    <option value="B">Bus</option>
+                </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="NP" class="col-4 col-form-label">Nama Pemesan</label> 
+                <div class="col-8">
+                <input id="NP" name="NP" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-4">Kategori Pinjaman</label> 
+                <div class="col-8">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="KP" id="KP_0" type="radio" class="custom-control-input" value="P"> 
+                    <label for="KP_0" class="custom-control-label">Pribadi</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="KP" id="KP_1" type="radio" class="custom-control-input" value="PO"> 
+                    <label for="KP_1" class="custom-control-label">Perusahaan/Organisasi</label>
+                </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="textarea" class="col-4 col-form-label">Deskripsi Kebutahan</label> 
+                <div class="col-8">
+                <textarea id="textarea" name="textarea" cols="40" rows="2" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Jam" class="col-4 col-form-label">Jam</label> 
+                <div class="col-8">
+                <input id="Jam" name="Jam" type="time" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="TS" class="col-4 col-form-label">Tanggal Service</label> 
+                <div class="col-8">
+                <div class="input-group">
+                    <input id="TS" name="TS" type="date" class="form-control"> 
+                    <div class="input-group-append">
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="RM" class="col-4 col-form-label">Request Montir</label> 
+                <div class="col-8">
+                <input id="RM" name="RM" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="T" class="col-4 col-form-label">Telphone/HP</label> 
+                <div class="col-8">
+                <input id="T" name="T" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Email" class="col-4 col-form-label">Email</label> 
+                <div class="col-8">
+                <input id="Email" name="Email" type="text" class="form-control">
+                </div>
+            </div> 
+            <div class="form-group row">
+            <div class="offset-4 col-8">
+                  <a href="datarmontir.html">
+                    <button name="submit" type="submit" class="btn btn-primary"><a style="text-decoration: none; color: black;" href="datarmontir.html">Submit</a></button>
+                  </a>
+                    <button name="submit" type="submit">Resset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer class="footer" style="padding: 20px;">
+    <hr>
+    <strong>Develop By <a href="#">Mahasiswa STT-NF</a></strong> @2024
+</footer>
+
+</body>
+</html>
